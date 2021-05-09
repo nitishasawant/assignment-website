@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  <title>JS Bin</title>
+<style>
+    *{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  list-style:none;
+  text-decoration:none;
+}
+body{
+  font-family:"Open Sans";
+}
+.container{
+  display:flex;
+  position:relative;
+}
+.container .sidebar{
+  position:fixed;
+  width:150px;
+  height:100%;
+  text-align:center;
+  box-shadow: 0 15px 15px grey; 
+}
+.sidebar ul li{
+  padding:20px;
+}
+.sidebar ul li a{
+  color:grey;
+}
+.sidebar ul li:hover{
+  background-color:lightblue;
+  border-left:3px solid blue;
+  color:black;
+}
+.sidebar ul li a:hover{
+  color:black;
+}
+.container .middle{
+  width:100%;
+  margin-left:150px;
+}
+.middle{
+  background-color:#DCDCDC;
+}
+.container .middle .header{
+  background-color:#fff;
+  height:80px;
+}
+.container .middle .main_section #firstext{
+ border-radius:10px;
+  width:70%;
+  height:30px;
+  border:1px;
+}
+.container .middle .main_section {
+  padding:30px;
+  line-height:60px;
+}
+.container .middle .main_section #firstp{
+  color:#5F9EA0;
+}
+.container .middle .main_section #secondtext{
+  text-align:center;
+  padding:70px 10px;
+  border:1px;
+}
+.container .middle .main_section input{
+  margin-left:180px;
+}
+.container .middle .main_section #thirdtext{
+  text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="sidebar">
+  <ul>
+    <li><a href=""><i class="fa fa-500px fa-2x"></i></a></li>
+    <li><a href="#"><i class="fa fa-user fa-2x"></i><br/>Students</a></li>
+    <li><a href="#"><i class="fa fa-book fa-2x"></i><br/>Lesson Plan</a></li>
+    <li><a href="#"><i class="fa fa-cog fa-2x"></i><br/>Settings</a></li>
+  </ul>
+  </div>
+  <div class="middle">
+    <div class="header"></div>
+    <div class="main_section">
+    <p id="firstp"> <i class="fa fa-caret-left fa-1.5x"></i> Videos</p>
+    <input type="text" id ="firstext" placeholder="Insert URL Here" />
+    <p id="thirdtext">or</p>
+    <input type="text" id="secondtext" placeholder="upload">
+    </div>
+    </div>
+</div>
+</body>
+</html>
